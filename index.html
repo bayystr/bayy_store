@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayy's Store - REAL ALL INFORMASI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --accent: #ffffff;
+            --dark-bg: #1a1a2e;
+            --card-bg: #16213e;
+            --text-light: #f1f1f1;
+            --text-muted: #b8b8b8;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('https://files.catbox.moe/uopmqg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+        
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            border: none;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .btn:hover::after {
+            opacity: 1;
+        }
+        
+        .btn-wa {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .btn-group {
+            background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+            color: white;
+        }
+        
+        .btn-channel {
+            background: linear-gradient(135deg, #0984e3, #74b9ff);
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(-2px);
+        }
+        
+        .btn i {
+            margin-right: 12px;
+            font-size: 1.3rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 16px 20px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://files.catbox.moe/cpiqho.jpg" alt="Bayy's Store Logo" class="logo">
+            <h1>BAYY'S STORE</h1>
+            <div class="tagline">REAL ALL ACCOUNT BAYY'S STORE!!</div>
+        </header>
+        
+        <div class="btn-container">
+            <a href="https://wa.me/6283151438821" class="btn btn-wa">
+                <i class="fab fa-whatsapp"></i> WA UTAMA BAYY'S STORE
+            </a>
+            
+            <a href="https://wa.me/6283151433378" class="btn btn-wa">
+                <i class="fab fa-whatsapp"></i> WA KEDUA BAYY'S STORE
+            </a>
+            
+            <a href="https://wa.me/6282174832704" class="btn btn-wa">
+                <i class="fab fa-whatsapp"></i> WA KETIGA BAYY'S STORE
+            </a>
+            
+            <a href="https://chat.whatsapp.com/KCNPjzmD1TXHVqpML2AMCl" class="btn btn-group">
+                <i class="fas fa-users"></i> GROUP JB ALL GAME BAYY'S STORE
+            </a>
+            
+            <a href="https://whatsapp.com/channel/0029VbAWbYrA2pL6GzeGAM2R" class="btn btn-channel">
+                <i class="fas fa-info-circle"></i> SALURAN INFO/STOK BAYY'S STORE
+            </a>
+            
+            <a href="https://whatsapp.com/channel/0029VacJjf48kyyTSBB0En2f" class="btn btn-channel">
+                <i class="fas fa-star"></i> SALURAN TESTIMONI BAYY'S STORE
+            </a>
+        </div>
+        
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bayy_store66"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/bayy_store"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.tiktok.com/@bayys_store"><i class="fab fa-tiktok"></i></a>
+            </div>
+            &copy; 2025 BAYY'S STORE. Bismillah,Go To Proses.
+        </footer>
+    </div>
+</body>
+</html>
